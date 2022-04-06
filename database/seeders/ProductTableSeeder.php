@@ -17,14 +17,17 @@ class ProductTableSeeder extends Seeder
         Product::create(
             [
             // db coloum name || value
-            'shampo'=>'x',
-            'lotion'=>'1',
-            'cream'=>'12.0',
-            'shower_gel'=>'10.0',
-            'hair_color'=>'10.0',
-            'facial_product'=>'10.0',
+            'shampo'=>'dove',
+            'lotion'=>'nivea',
+            'cream'=>'olay',
+            'shower_gel'=>'10',
+            'hair_color'=>'10',
+            'facial_product'=>'10',
+            'hair_product'=>'10',
+
     
             ]
     );
     }
+    
 }

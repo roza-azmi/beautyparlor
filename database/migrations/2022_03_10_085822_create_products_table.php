@@ -15,12 +15,9 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('shampo');
-            $table->integer('lotion');
-            $table->integer('cream');
-            $table->double('shower_gel');
-            $table->double('hair_color');
-            $table->double('facial_product');
+            $table->string('product_name');
+            $table->string('product_details');
+            $table->string('image')->nullable;
             $table->timestamps();
         });
     }

@@ -1,8 +1,4 @@
 
-
-
-
-
 @extends('master') 
 @section('content')
             

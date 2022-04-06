@@ -14,8 +14,9 @@ class CreateShiftsTable extends Migration
     public function up()
     {
         Schema::create('shifts', function (Blueprint $table) {
-            $table->integer('day_shift');
-            $table->integer('night_shift');
+            $table->id();
+            $table->string('customer_name');
+            $table->string('customer_details');
             $table->timestamps();
         });
     }

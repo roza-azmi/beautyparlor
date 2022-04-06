@@ -1,9 +1,5 @@
 @extends('master') 
 @section('content')
-            
-
-
-            
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,71 +15,39 @@
 <div class="container">
 <div class="row justify-content-center">
 <div class="col-md-6 text-center mb-5">
-<h2 class="heading-section">shift time</h2>
+<h2 class="heading-section">Shift(time and date)</h2>
 </div>
 </div>
 <div class="row">
 <div class="col-md-12">
-<h4 class="text-center mb-4">day shift & night shift</h4>
+<h4 class="text-center mb-4">Time & Date</h4>
 <div class="table-wrap">
 <table class="table">
 <thead class="thead-primary">
 <tr>
     <!-- <th> serial</th> -->
-<th>day_shift</th>
-<th>night_shift</th>
-<th>button</th>
+<th>customer_name</th>
+<th>customer_details</th>
+<th>time&date</th>
+<th>Action</th>
 </tr>
 </thead>
 <tbody>
-    
-
-<!-- <td><a href="#" class="btn btn-primary">Sign Up</a></td> -->
-<!-- </tr> -->
-
-@foreach($shifts as  $singleshift)
-<tr>
-<th scope="row"></th>
-<td>{{$singleshift->day_shift}}</td>
-<td>{{$singleshift->night_shiftt}}</td>
-<td>{{$singleshift->button}}
-<a href="#" class="btn btn-primary">click here</a>
-
-</td>
-@endforeach
+@foreach($shift as $data)
+                                <tr>
+                                    <td>{{$data->customer_name}}</td>
+                                    <td>{{$data->customer_details}}</td>
+                                    <td>{{$data->created_at}}</td>
+                                    <td>
+                                        <a class="btn btn-primary" href="{{route('shift.edit',$data->id)}}">Edit</a>
+                                        <a class="btn btn-danger" href="{{route('shift.delete',$data->id)}}">Delete</a>
+                                        <a class="btn btn-success" href="">View</a>
+                                    </td>
+                                </tr>
+                                @endforeach
 
 
-
-
-<tr>
-<th scope="row" class="scope"></th>
-<td></td>
-
-
-</tr>
-<tr>
-<th scope="row" class="scope"></th>
-<td></td>
-
-
-</tr>
-<tr>
-<th scope="row" class="scope"></th>
-<td></td>
-
-
-</tr>
-<tr>
-<th scope="row" class="scope"></th>
-<td></td>
-
-
-</tr>
-<tr>
-<th scope="row" class="scope border-bottom-0"></th>
-<td class="border-bottom-0"></td>
-
-
+<a href="{{route('shift.form')}}" class="btn btn-success">Create Shift</a>
 </tr>
 </tbody>
 </table>

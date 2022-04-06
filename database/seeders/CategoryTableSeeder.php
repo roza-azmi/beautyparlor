@@ -17,9 +17,11 @@ class CategoryTableSeeder extends Seeder
         Category::create(
             [
             // db coloum name || value
-            'category_name'=>'x',
-            'service-details'=>'x',
-            'price'=>'10.6',
+            'customer_name'=>'x',
+            'service_type'=>'x',
+            'service_price'=>'10.6',
+            'service_shift'=>'day',
+            
             
             
             

@@ -8,12 +8,12 @@
 <html lang="en">
 <head>
 <title>product list</title>
-<meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'> -->
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
- <link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/table-03/css/A.style.css.pagespeed.cf.PlwJDa5bmm.css"> -->
- <script nonce="963b98f8-d94f-4971-808f-5c66466c6050">(function(w,d){!function(a,e,t,r,z){a.zarazData=a.zarazData||{},a.zarazData.executed=[],a.zarazData.tracks=[],a.zaraz={deferred:[]};var s=e.getElementsByTagName("title")[0];s&&(a.zarazData.t=e.getElementsByTagName("title")[0].text),a.zarazData.w=a.screen.width,a.zarazData.h=a.screen.height,a.zarazData.j=a.innerHeight,a.zarazData.e=a.innerWidth,a.zarazData.l=a.location.href,a.zarazData.r=e.referrer,a.zarazData.k=a.screen.colorDepth,a.zarazData.n=e.characterSet,a.zarazData.o=(new Date).getTimezoneOffset(),a.dataLayer=a.dataLayer||[],a.zaraz.track=(e,t)=>{for(key in a.zarazData.tracks.push(e),t)a.zarazData["z_"+key]=t[key]},a.zaraz._preSet=[],a.zaraz.set=(e,t,r)=>{a.zarazData["z_"+e]=t,a.zaraz._preSet.push([e,t,r])},a.dataLayer.push({"zaraz.start":(new Date).getTime()}),a.addEventListener("DOMContentLoaded",(()=>{var t=e.getElementsByTagName(r)[0],z=e.createElement(r);z.defer=!0,z.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a.zarazData))),t.parentNode.insertBefore(z,t)}))}(w,d,0,"script");})(window,document);</script></head> -->
+<meta charset="UFT-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+ <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'> 
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+ <link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/table-03/css/A.style.css.pagespeed.cf.PlwJDa5bmm.css"> 
+ <script nonce="963b98f8-d94f-4971-808f-5c66466c6050">(function(w,d){!function(a,e,t,r,z){a.zarazData=a.zarazData||{},a.zarazData.executed=[],a.zarazData.tracks=[],a.zaraz={deferred:[]};var s=e.getElementsByTagName("title")[0];s&&(a.zarazData.t=e.getElementsByTagName("title")[0].text),a.zarazData.w=a.screen.width,a.zarazData.h=a.screen.height,a.zarazData.j=a.innerHeight,a.zarazData.e=a.innerWidth,a.zarazData.l=a.location.href,a.zarazData.r=e.referrer,a.zarazData.k=a.screen.colorDepth,a.zarazData.n=e.characterSet,a.zarazData.o=(new Date).getTimezoneOffset(),a.dataLayer=a.dataLayer||[],a.zaraz.track=(e,t)=>{for(key in a.zarazData.tracks.push(e),t)a.zarazData["z_"+key]=t[key]},a.zaraz._preSet=[],a.zaraz.set=(e,t,r)=>{a.zarazData["z_"+e]=t,a.zaraz._preSet.push([e,t,r])},a.dataLayer.push({"zaraz.start":(new Date).getTime()}),a.addEventListener("DOMContentLoaded",(()=>{var t=e.getElementsByTagName(r)[0],z=e.createElement(r);z.defer=!0,z.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a.zarazData))),t.parentNode.insertBefore(z,t)}))}(w,d,0,"script");})(window,document);</script></head> 
 <body>
 <section class="ftco-section">
 <div class="container">
@@ -29,67 +29,35 @@
 <table class="table">
 <thead class="thead-primary">
 <tr>
-    <!-- <th> serial</th> -->
-<th>shampo</th>
-<th>lotion</th>
-<th>cream</th>
-<th>shower_gel</th>
-<th>hair_color</th>
-<th>facial_product</th>
-<th>button</th>
+    
+<th>product_name</th>
+<th>product_details</th>
+<th>Image</th>
+<th>action</th>
 </tr>
 </thead>
 <tbody>
-    @foreach($products as  $singleproduct)
-<tr>
-<th scope="row"></th>
-<td>{{$singleproduct->shampo}}</td>
-<td>{{$singleproduct->lotion}}</td>
-<td>{{$singleproduct->cream}}</td>
-<td>{{$singleproduct->shower_gel}}</td>
-<td>{{$singleproduct->hair_color}}</td>
-<td>{{$singleproduct->facial_product}}</td>
-<td>{{$singleproduct->button}}
-<a href="#" class="btn btn-primary">Sign Up</a>
-
-</td>
-@endforeach
-
-<!-- <td><a href="#" class="btn btn-primary">Sign Up</a></td> -->
-<!-- </tr> -->
+@foreach($product as $data)
+                                <tr>
+                                    <td>{{$data->product_name}}</td>
+                                    <td>{{$data->product_details}}</td>
+                                    <td><img width="90px" src="{{url('/uploads/product/',$data->image)}}" alt="{{$data->product_name}}"></td>
+                                    
+                                    <td>
+                                        <a class="btn btn-primary" href="{{route('product.edit',$data->id)}}">Edit</a>
+                                        <a class="btn btn-danger" href="{{route('product.delete',$data->id)}}">Delete</a>
+                                        <a class="btn btn-success" href="">View</a>
+                                    </td>
+                                </tr>
+                                @endforeach
 
 
 
-
-<tr>
-<th scope="row" class="scope"></th>
-<td></td>
-
-
-</tr>
-<tr>
-<th scope="row" class="scope"></th>
-<td></td>
-
-
-</tr>
-<tr>
-<th scope="row" class="scope"></th>
-<td></td>
-
-
-</tr>
-<tr>
-<th scope="row" class="scope"></th>
-<td></td>
-
-
+                                <a href="{{route('product.form')}}" class="btn btn-primary">create new product</a>
 </tr>
 <tr>
 <th scope="row" class="scope border-bottom-0"></th>
 <td class="border-bottom-0"></td>
-
-
 </tr>
 </tbody>
 </table>

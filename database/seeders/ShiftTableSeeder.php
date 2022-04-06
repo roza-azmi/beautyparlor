@@ -14,11 +14,13 @@ class SiftTableSeeder extends Seeder
     public function run()
     {
         //
-        Product::create(
+        Shift::create(
             [
             // db coloum name || value
-            'day_shift'=>'10',
-            'night_shift'=>'11',
+            'Customer_Name'=>'x',
+            'Date'=>'11.3.22',
+            'Time'=>'10',
+            'Phone_number'=>'01',
            
     
             ]
