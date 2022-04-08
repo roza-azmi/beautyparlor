@@ -16,7 +16,7 @@ public function doLogin(Request $request)
 {
     $request->validate([
         'email'=>'required|email',
-        'password'=>'required|min:5'
+        'password'=>'required'
     ]);
 
     $credentials=$request->except('_token');
@@ -32,6 +32,11 @@ public function logout()
     auth()->logout();
     return redirect()->route('admin.login')->with('message','Logout Sucessful');
 }
+
+
+
+
+
 
 }
 

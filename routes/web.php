@@ -43,12 +43,22 @@ Route::get('/receptionist', function () {
 
 // customer log in
 Route::get('/customer/Login',[CustomAuthController::class,'Login'])->name('customer.Login');
+Route::post('/customer/doLogin',[CustomAuthController::class,'doLogin'])->name('customer.doLogin');
+
+Route::get('/logout',[CustomAuthController::class,'Logout'])->name('user.Logout');
+     Route::get('/', function(){
+         return view('home');
+     })->name('home');
+
+
 
 
 
 // customer registration
 Route::get('/customer/registration',[CustomAuthController::class,'registration'])->name('customer.registration');
-Route::post('/customer/do/registration',[CustomerAuthController::class,'doregistration'])->name('customer.doregistration');
+
+
+Route::post('/customer/do/registration',[CustomAuthController::class,'doregistration'])->name('customer.do.registration');
 
 // customer view
 Route::get('/customer/view',[CustomAuthController::class,'customer'])->name('customer.view');
@@ -74,6 +84,7 @@ Route::get('/home',[HomeController::class,'home'])->name('home');
 Route::get('/main', function () {
     return view('frontend.main');
 })->name('main');
+
 
 
 

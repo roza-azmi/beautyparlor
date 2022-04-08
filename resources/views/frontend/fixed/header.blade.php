@@ -15,14 +15,16 @@
                                 <ul class="menu">
                                     <li class="active"><a href="index.html">Home</a></li>
                                     <li class="active"><a href="{{route('customer.registration')}}">Registration</a></li>
-                                    <li class="active"><a href="">log in</a></li>
+                                    <li class="active"><a href="{{route('customer.Login')}}">log in</a></li>
+                                    <li class="active"><a href="{{route('service.show')}}">Services</a></li>
                                     <li class="active"><a href="index.html">Booking</a></li>
+                                    <li class="active"><a href="index.html">Payment</a></li>
                                     <li class="active"><a href="index.html">add to cart</a></li>
-                                    <li class="active"><a href="index.html">payment</a></li>
+                                    <li class="active"><a href="{{route('service.show')}}">About Us</a></li>                                
 
 
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#about"></a></li>
+                                    <li><a href=""></a></li>
                                     <li class="p-0">
                                         <!-- First Tier Drop Down -->
                                         <label for="drop-2" class="toggle">Pages <span class="fa fa-angle-down" aria-hidden="true"></span> </label>

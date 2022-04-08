@@ -6,15 +6,13 @@
 <thead>
 
 </thead>
-<tbody>
+<tbody>  
 
-<th scope="col">name</th>
-            <th scope="col">adress</th>
-            <th scope="col">phone_number</th>
-            <th scope="col">email</th>
-            <th scope="col">password</th>
-            <th scope="col">time&date</th>
-            <th scope="col">Action</th>
+
+             <th scope="col">name</th>
+            
+            
+           
         
             @foreach($customer as $data)
                                 <tr>

@@ -21,17 +21,24 @@
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <h2 class="form-title">Sign up</h2>
+                        <h2 class="form-title">Registration</h2>
+                        @if ($errors->any())
+            @foreach ($errors->all() as $error)
+                 <div style="background-color:#e4a8a8;color:black">
+                    <p class=""> {{$error}}</p>
+                    </div>
+            @endforeach
+                 @endif
                         
-                        <form action="{{route('customer.doregistration')}}" method="POST" enctype="multipart/form-data">
-    @csrf
+    <form action="{{route('customer.do.registration')}}" method="POST" enctype="multipart/form-data">
+                     @csrf
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name"/>
                             </div>
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="adress" id="adress" placeholder="Your Adress"/>
+                                <input type="text" name="address" id="address" placeholder="Your Adress"/>
                             </div>
                             <div class="form-group">
                                 <label for="phone_number"><i class="zmdi zmdi-account material-icons-name"></i></label>
@@ -43,13 +50,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="Password"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
-                            </div>
-                            
+                                <input type="password" name="password" id="password" placeholder="Password"/>
                             <div class="form-group form-button">
                                 <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
                             </div>

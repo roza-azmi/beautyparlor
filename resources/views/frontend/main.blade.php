@@ -1,17 +1,9 @@
 
-
-<!--
-Author:W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-
 <!DOCTYPE html>
 <html lang="zxx">
 
 <head>
-    <title>dashboard</title>
+    <title>Upshot Beauty Category Bootstrap Responsive Template | Home :: W3layouts</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -37,6 +29,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- /Fonts -->
     <link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 
     <!-- //Fonts -->
 
@@ -86,7 +80,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
      ga('require', 'urlChangeTracker');
      ga('send', 'pageview');
    </script>
-<script async src='/js/autotrack.js'></script>
+<script async src='https://demo.w3layouts.com/js/autotrack.js'></script>
 
 <meta name="robots" content="noindex">
 <body><link rel="stylesheet" href="https://demo.w3layouts.com/assests/css/font-awesome.min.css">
@@ -238,27 +232,27 @@ RIGHT SIDEBAR TOGGLE SECTION
 <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse">
 <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
 
-    <!-- <div id="w3lDemoBar" class="w3l-demo-bar"> -->
-        <!-- <div class="demo-btns"> -->
-        <!-- <a href="https://w3layouts.com/?p=42299"> -->
-            <!-- <span class="w3l-icon -back"> -->
-                <!-- <span class="fa fa-arrow-left"></span> -->
-            <!-- </span> -->
-            <!-- <span class="w3l-text">Back</span> -->
-        <!-- </a> -->
-        <!-- <a href="https://w3layouts.com/?p=42299"> -->
-            <!-- <span class="w3l-icon -download"> -->
-                <!-- <span class="fa fa-download"></span> -->
-            <!-- </span> -->
-            <!-- <span class="w3l-text">Download</span> -->
-        <!-- </a> -->
-        <!-- <a href="https://w3layouts.com/checkout/?add-to-cart=42299" class="no-margin-bottom-mobile"> -->
-            <!-- <span class="w3l-icon -buy"> -->
-                <!-- <span class="fa fa-shopping-cart"></span> -->
-            <!-- </span> -->
-            <!-- <span class="w3l-text">Buy</span> -->
-        <!-- </a> -->
-    <!-- </div> -->
+    <div id="w3lDemoBar" class="w3l-demo-bar">
+        <div class="demo-btns">
+        <a href="https://w3layouts.com/?p=42299">
+            <span class="w3l-icon -back">
+                <span class="fa fa-arrow-left"></span>
+            </span>
+            <span class="w3l-text">Back</span>
+        </a>
+        <a href="https://w3layouts.com/?p=42299">
+            <span class="w3l-icon -download">
+                <span class="fa fa-download"></span>
+            </span>
+            <span class="w3l-text">Download</span>
+        </a>
+        <a href="https://w3layouts.com/checkout/?add-to-cart=42299" class="no-margin-bottom-mobile">
+            <span class="w3l-icon -buy">
+                <span class="fa fa-shopping-cart"></span>
+            </span>
+            <span class="w3l-text">Buy</span>
+        </a>
+    </div>
         <!---<div class="responsive-icons">
             <a href="#url" class="desktop-mode">
                 <span class="w3l-icon -desktop">
@@ -290,19 +284,19 @@ RIGHT SIDEBAR TOGGLE SECTION
         <div class="bg-overlay">
 
             <!-- header -->
-           @include('frontend.fixed.header')
+            @include('frontend.fixed.header')
             <!-- //header -->
             <div class="container">
 
                 <div class="banner-info">
-                    <h3>glow yourself</h3>
+                    <h3>Pro Skin Whitening Creams of 2019</h3>
 
-                    <p><span class="fa fa-envelope" aria-hidden="true"></span> we are here for your service</p>
-                    <!-- <form action="#" method="post" class=""> -->
-                        <!-- <input type="email" name="Email" placeholder="Enter your email..." required=""> -->
-                        <!-- <button type="submit" class="btn"><span class="fa fa-paper-plane"></span></button> -->
-                        <!-- <div class="clearfix"> </div> -->
-                    <!-- </form> -->
+                    <p><span class="fa fa-envelope" aria-hidden="true"></span> Don't miss out ! Get Special Discount In Your Inbox</p>
+                    <form action="#" method="post" class="">
+                        <input type="email" name="Email" placeholder="Enter your email..." required="">
+                        <button type="submit" class="btn"><span class="fa fa-paper-plane"></span></button>
+                        <div class="clearfix"> </div>
+                    </form>
                 </div>
 
             </div>
@@ -321,9 +315,10 @@ RIGHT SIDEBAR TOGGLE SECTION
                 </div>
                 <div class="col-xl-6 col-lg-7 about-right offset-xl-1">
                     <h4 class="sub-tittle">About Us</h4>
-                    <h3 class="title-w3pvt pr-lg-5 mt-2">we provide service in low price</h3>
-                    <p class="my-4">our service is online and offline based</p>
-                    <p>for our services please make appointment</p>
+                    <h3 class="title-w3pvt pr-lg-5 mt-2">Duis aute irure olor in cillum solore</h3>
+                    <p class="my-4">Lorem ipsum dolor sit amet Neque porro quisquam est qui dolorem Lorem int ipsum dolor sit
+                        amet id tempor felis. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit.</p>
                     <a href="#services" class="btn button-style-2 mt-sm-5 mt-4">Read More</a>
                 </div>
             </div>
@@ -340,23 +335,24 @@ RIGHT SIDEBAR TOGGLE SECTION
                 <div class="col-lg-7 pt-5">
                     <div class="inner-heading">
                         <h3 class="title-w3pvt my-md-4"> Why Choose Us</h3>
-                        <p class="mt-md-0 mt-2">we provide expert beauticians</p>
+                        <p class="mt-md-0 mt-2">Donec cursus congue risus, quis varius velit accumsan aliquam. Morbi semper nunc. Perspiciatis unde omnis iste
+                            natus doloret ipsum volupte ut accusal ntium dolor remque laudantium, totam dolor</p>
                     </div>
                     <div class="row mt-5 fact-grid-main">
                         <div class="col-sm-4 stats-grid">
                             <span class="fa fa-trophy"></span>
-                            <span>25</span>
-                            <h4>Experienced Hairstylist</h4>
+                            <span>250</span>
+                            <h4>Experienced Barbers</h4>
                         </div>
                         <div class="col-sm-4 stats-grid">
                             <span class="fa fa-scissors"></span>
-                            <span>50</span>
-                            <h4>Amazing Beautician</h4>
+                            <span>50+</span>
+                            <h4>Amazing Hairstyles</h4>
                         </div>
                         <div class="col-sm-4 stats-grid">
                             <span class="fa fa-smile-o"></span>
-                            <span>100</span>
-                            <h4>Satisfied Products</h4>
+                            <span>2000+</span>
+                            <h4>Satisfied clients</h4>
                         </div>
                     </div>
                 </div>
@@ -385,7 +381,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                         </div>
                         <div class="col-md-8 benifit-w3layouts-info">
                             <h4 class="mb-3">Hair Services</h4>
-                            <p>10 to 12 am</p>
+                            <p>Morbi viverra lacus commodo felis semper lectus feugiat.</p>
                         </div>
 
                     </div>
@@ -399,7 +395,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                         </div>
                         <div class="col-md-8 benifit-w3layouts-info">
                             <h4 class="mb-3">Nail Services</h4>
-                            <p>9 to 10 am</p>
+                            <p>Morbi viverra lacus commodo felis semper lectus feugiat.</p>
                         </div>
                     </div>
                 </div>
@@ -412,7 +408,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                         </div>
                         <div class="col-md-8 benifit-w3layouts-info">
                             <h4 class="mb-3">Makeup Services</h4>
-                            <p>10 to 7 pm</p>
+                            <p>Morbi viverra lacus commodo felis semper lectus feugiat.</p>
                         </div>
                     </div>
                 </div>
@@ -427,7 +423,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                         </div>
                         <div class="col-md-8 benifit-w3layouts-info">
                             <h4 class="mb-3">Spa Salon</h4>
-                            <p>12 to 4 pm</p>
+                            <p>Morbi viverra lacus commodo felis semper lectus feugiat.</p>
                         </div>
                     </div>
                 </div>
@@ -440,7 +436,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                         </div>
                         <div class="col-md-8 benifit-w3layouts-info">
                             <h4 class="mb-3">Waxing</h4>
-                            <p>9 to 10 am</p>
+                            <p>Morbi viverra lacus commodo felis semper lectus feugiat.</p>
                         </div>
                     </div>
                 </div>
@@ -453,7 +449,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                         </div>
                         <div class="col-md-8 benifit-w3layouts-info">
                             <h4 class="mb-3">Coloring</h4>
-                            <p>11 to 7 pm</p>
+                            <p>Morbi viverra lacus commodo felis semper lectus feugiat.</p>
                         </div>
                     </div>
                 </div>
@@ -462,150 +458,64 @@ RIGHT SIDEBAR TOGGLE SECTION
     </section>
     <!--//services -->
     <!-- team -->
-    <section class="team py-5" id="team">
-        <div class="container py-md-5">
-            <div class="title-desc text-center">
-                <h3 class="title-w3pvt text-capitalize mb-md-5 mb-4">Our Professional Team</h3>
-            </div>
-            <div class="row team-grid">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="box13">
-                        <img src="images/team1.jpg" class="img-fluid" alt="" />
-                        <div class="box-content">
-                            <h3 class="title">Beauty Expert</h3>
-                            <span class="post">role in detail</span>
-                            <ul class="social">
-                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">
-                    <div class="box13">
-                        <img src="images/team2.jpg" class="img-fluid" alt="" />
-                        <div class="box-content">
-                            <h3 class="title">Makeup Artist</h3>
-                            <span class="post">role in detail</span>
-                            <ul class="social">
-                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">
-                    <div class="box13">
-                        <img src="images/team3.jpg" class="img-fluid" alt="" />
-                        <div class="box-content">
-                            <h3 class="title">Colouring Expert</h3>
-                            <span class="post">role in detail</span>
-                            <ul class="social">
-                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">
-                    <div class="box13">
-                        <img src="images/team4.jpg" class="img-fluid" alt="" />
-                        <div class="box-content">
-                            <h3 class="title">Product Expert</h3>
-                            <span class="post">role in detail</span>
-                            <ul class="social">
-                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   
     <!-- //team -->
     <!-- /mid-section -->
     <section class="mid-section">
         <div class="d-lg-flex p-0">
             <div class="col-lg-6 bottom-w3layouts-left p-lg-0 pr-lg-3">
                 <img src="images/ab1.jpg" class="img-fluid" alt="" />
-                <h4 class="text-w3pvt">50% Off Any <br> Makeup</h4>
+                <h4 class="text-w3pvt">50% Off Any <br> Makeup Breshes</h4>
             </div>
             <div class="col-lg-6 bottom-w3layouts-left bottom-w3layouts-right p-lg-0 pl-lg-3">
                 <img src="images/ab2.jpg" class="img-fluid" alt="" />
-                <h4 class="text-w3layouts">30% Off <br> Any Spa</h4>
+                <h4 class="text-w3layouts">30% Off <br> Any Spa salon</h4>
             </div>
             <div class="clearfix"></div>
         </div>
     </section>
-     <!-- //mid-section  -->
+    <!-- //mid-section -->
     <!-- Gallery -->
-    <div class="gallery py-5" id="gallery">
-        <div class="container-fluid py-md-5">
-            <div class="title-desc text-center">
-                <h3 class="title-w3pvt text-capitalize mb-lg-5 mb-4">Latest Collections</h3>
-            @yield('content')
-            
+    
             <!-- gallery popups -->
             <!-- popup-->
-            <!-- <div id="gal1" class="pop-overlay animate"> -->
-                <!-- <div class="popup"> -->
-                    <!-- <img src="images/g1.jpg" alt="Popup Image" class="img-fluid" /> -->
-                    <!-- <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p> -->
-                    <!-- <a class="close" href="#gallery">&times;</a> -->
-                <!-- </div> -->
-            <!-- </div> -->
-            <!-- //popup -->
-            <!-- popup-->
-            <!-- <div id="gal2" class="pop-overlay animate"> -->
-                <!-- <div class="popup"> -->
-                    <!-- <img src="images/g2.jpg" alt="Popup Image" class="img-fluid" /> -->
-                    <!-- <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p> -->
-                    <!-- <a class="close" href="#gallery">&times;</a> -->
-                <!-- </div> -->
-            <!-- </div> -->
-            <!-- //popup -->
-            <!-- popup-->
-            <!-- <div id="gal3" class="pop-overlay animate"> -->
-                <!-- <div class="popup"> -->
-                    <!-- <img src="images/g3.jpg" alt="Popup Image" class="img-fluid" /> -->
-                    <!-- <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p> -->
-                    <!-- <a class="close" href="#gallery">&times;</a> -->
-                <!-- </div> -->
-            <!-- </div> -->
-            <!-- //popup3 -->
-            <!-- popup-->
-            <!-- <div id="gal4" class="pop-overlay animate"> -->
-                <!-- <div class="popup"> -->
-                    <!-- <img src="images/g4.jpg" alt="Popup Image" class="img-fluid" /> -->
-                    <!-- <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p> -->
-                    <!-- <a class="close" href="#gallery">&times;</a> -->
-                <!-- </div> -->
-            <!-- </div> -->
-            <!-- //popup -->
-            <!-- popup-->
-            <!-- <div id="gal5" class="pop-overlay animate"> -->
-                <!-- <div class="popup"> -->
-                    <!-- <img src="images/g5.jpg" alt="Popup Image" class="img-fluid" /> -->
-                    <!-- <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p> -->
-                    <!-- <a class="close" href="#gallery">&times;</a> -->
-                <!-- </div> -->
-            <!-- </div> -->
-            <!-- //popup -->
-            <!-- popup-->
-            <!-- <div id="gal6" class="pop-overlay animate"> -->
-                <!-- <div class="popup"> -->
-                    <!-- <img src="images/g6.jpg" alt="Popup Image" class="img-fluid" /> -->
-                    <!-- <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p> -->
-                    <!-- <a class="close" href="#gallery">&times;</a> -->
-                <!-- </div> -->
-            <!-- </div> -->
-            <!-- //popup -->
+           
+           @yield('content')
+            
             <!-- //gallery popups -->
-        <!-- </div> -->
-    <!-- </div> -->
+        </div>
+    </div>
     <!-- //gallery -->
-    <!-- footer -->
 
-   @include('frontend.fixed.footer')
-   <!-- endfooter -->
+    <!-- contact -->
+    
+    <!-- //contact -->
+
+    <!-- footer -->
+   
+    @include('frontend.fixed.footer')
+    <!-- //footer -->
+
+    <!-- copyright -->
+    <div class="cpy-right text-center py-3">
+        <p>© 2019 Upshot. All rights reserved | Design by
+            <a href="http://w3layouts.com"> W3layouts.</a>
+        </p>
+    </div>
+
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+
+
+
+
+<!-- <div id = "v-w3layouts"></div><script>(function(v,d,o,ai){ai=d.createElement('script');ai.defer=true;ai.async=true;ai.src=v.location.protocol+o;d.head.appendChild(ai);})(window, document, '//a.vdo.ai/core/v-w3layouts/vdo.ai.js');</script> -->
+	</body>
+
+</html>
